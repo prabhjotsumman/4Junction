@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Tank Problem</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="logic.js"></script>
+  </head>
+  <body id="app">
+    <h1>Water Tank Problem</h1>
+    <p class="question">
+      Given `n` is always greater than -1, representing the block height. Now
+      compute the units of water stored in-between the blocks.
+    </p>
+    <p>Enter block heights:</p>
+    <div>
+      <input
+        type="text"
+        id="block-heights"
+        placeholder="0,4,0,0,0,6,0,6,4,0"
+        maxlength="350"
+      />
+      <button id="calculate-btn" onclick="calculateWater()">Calculate</button>
+    </div>
+
+    <svg id="visualization" class="box"></svg>
+    <p id="result"></p>
+  </body>
+</html>
